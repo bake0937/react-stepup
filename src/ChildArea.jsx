@@ -6,6 +6,14 @@ const style = {
 
 const ChildArea = (props) => {
   const { open } = props;
+
+  console.log("ChildAreaがレンダリングされた!!");
+  // レンダリングコストが高い実装
+  const data = [...Array(2000).keys()];
+  data.forEach(() => {
+    console.log("....");
+  });
+
   return (
     <>
       {open ? (

@@ -6,8 +6,6 @@ export default function App() {
   const [text, setText] = useState("");
   const [open, setOpen] = useState(false);
 
-  console.log("App");
-
   const onChangeText = (e) => setText(e.target.value);
 
   const onClickOpen = () => {
